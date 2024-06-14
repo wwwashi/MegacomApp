@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity{
         TextViewUsername.setText(SharedPrefManager.getInstance(this).getUsername()+", рады вас видеть!");
         TextViewAccount.setText(SharedPrefManager.getInstance(this).getUseraccount());
         TextViewAddress.setText(SharedPrefManager.getInstance(this).getAccountAddress());
-        TextViewBalance.setText(SharedPrefManager.getInstance(this).getAccountBalance());
-        TextViewTariff.setText(SharedPrefManager.getInstance(this).getAccountTariff());
+        TextViewBalance.setText(SharedPrefManager.getInstance(this).getAccountBalance()+" ₽");
+        TextViewTariff.setText(SharedPrefManager.getInstance(this).getAccountTariff()+" ₽");
     }
 }
